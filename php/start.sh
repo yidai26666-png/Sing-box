@@ -1,16 +1,16 @@
 #!/bin/bash  
 
-export UUID=${UUID:-'fdeeda45-0a8e-4570-bcc6-d68c995f5830'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
-export NEZHA_SERVER=${NEZHA_SERVER:-''}       # v1哪吒填写形式：nezha.xxx.com:8008,v0哪吒填写形式：nezha.xxx.com
+export UUID=${UUID:-'0ca23936-4e55-4d7a-9062-b9d69a106353'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
+export NEZHA_SERVER=${NEZHA_SERVER:-'3.138.178.125:8008'}       # v1哪吒填写形式：nezha.xxx.com:8008,v0哪吒填写形式：nezha.xxx.com
 export NEZHA_PORT=${NEZHA_PORT:-''}           # v1哪吒不要填写这个,v0哪吒agent端口为{443,8443,2053,2083,2087,2096}其中之一时自动开启tls
-export NEZHA_KEY=${NEZHA_KEY:-''}             # 哪吒v0-agent密钥或v1的NZ_CLIENT_SECRET
-export ARGO_DOMAIN=${ARGO_DOMAIN:-''}         # 固定隧道域名,留空即启用临时隧道
-export ARGO_AUTH=${ARGO_AUTH:-''}             # 固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
+export NEZHA_KEY=${NEZHA_KEY:-'1t5myYz5Nse5nzoZhNxYPplfzmhpQdof'}             # 哪吒v0-agent密钥或v1的NZ_CLIENT_SECRET
+export ARGO_DOMAIN=${ARGO_DOMAIN:-'byethost.binxue.ggff.net'}         # 固定隧道域名,留空即启用临时隧道
+export ARGO_AUTH=${ARGO_AUTH:-'eyJhIjoiNjZiZjRhMjcyYzJjYTkwNDA5MDcxNzU4MmJjNDNkODEiLCJ0IjoiZTg0NGVkMGEtNDdlNi00NTYzLThkN2EtZDE4NjRhZjc5YWQ0IiwicyI6Ik1HVXpPV05tTmpRdFpEWTVaQzAwWkRZM0xUaGtNemt0TXpjeU0yVm1PVGhoTUdSbCJ9'}             # 固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
 export CFIP=${CFIP:-'saas.sin.fan'}           # argo节点优选域名或优选ip
 export CFPORT=${CFPORT:-'443'}                # argo节点端口 
-export NAME=${NAME:-''}                       # 节点名称  
+export NAME=${NAME:-'byethost'}                       # 节点名称  
 export FILE_PATH=${FILE_PATH:-'.tmp'}         # sub 路径  
-export ARGO_PORT=${ARGO_PORT:-'8001'}         # argo端口, 如节点不通可以修改，使用固定隧道token,cloudflare后台设置的端口需和这里对应
+export ARGO_PORT=${ARGO_PORT:-'8051'}         # argo端口, 如节点不通可以修改，使用固定隧道token,cloudflare后台设置的端口需和这里对应
 # export ARGO_PORT=${ARGO_PORT:-$(shuf -i 2000-65000 -n 1)} # 去掉此行开头的#号并将上面一行删除或注释即使用随机端口，配置固定隧道json使用
 export S5_PORT=${S5_PORT:-''}                 # socks5端口,支持多端口玩具可填写，否则不动
 export HY2_PORT=${HY2_PORT:-''}               # Hy2 端口，支持多端口玩具可填写，否则不动
