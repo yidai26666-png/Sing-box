@@ -18,8 +18,8 @@ export TUIC_PORT=${TUIC_PORT:-''}             # Tuic 端口，支持多端口玩
 export ANYTLS_PORT=${ANYTLS_PORT:-''}         # AnyTLS 端口,支持多端口玩具可填写，否则不动
 export REALITY_PORT=${REALITY_PORT:-''}       # Reality 端口,支持多端口玩具可填写，否则不动 
 export ANYREALITY_PORT=${ANYREALITY_PORT:-''} # AnyReality 端口,支持多端口玩具可填写，否则不动   
-export CHAT_ID=${CHAT_ID:-''}                 # TG chat_id，可在https://t.me/laowang_serv00_bot 获取
-export BOT_TOKEN=${BOT_TOKEN:-''}             # TG bot_token, 使用自己的bot需要填写,使用上方的bot不用填写,不会给别人发送
+export CHAT_ID=${CHAT_ID:-'662214858'}                 # TG chat_id，可在https://t.me/laowang_serv00_bot 获取
+export BOT_TOKEN=${BOT_TOKEN:-'8778647840:AAHyI1NalXtPmhSeZFas9Fe97Q47avW9_F8'}             # TG bot_token, 使用自己的bot需要填写,使用上方的bot不用填写,不会给别人发送
 export UPLOAD_URL=${UPLOAD_URL:-''}  # 订阅自动上传地址,没有可不填,需要填部署Merge-sub项目后的首页地址,例如：https://merge.xxx.com
 export DISABLE_ARGO=${DISABLE_ARGO:-'false'}  # 是否禁用argo, true为禁用,false为不禁用,默认开启
 
